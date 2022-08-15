@@ -37,8 +37,8 @@ Mobile  View
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://your-solution-url.com)
-- Live Site URL: [GitHub Page](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/GentryHQ/3-column-card)
+- Live Site URL: [GitHub Page](https://gentryhq.github.io/3-column-card)
 
 ## My process
 
