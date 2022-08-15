@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* color variables */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /*-paragraphs */
+  --Very-light-gray: hsl(0, 0%, 95%); /*-background-headings-buttons*/
+
+  /* font variables */
+  --font-stack-1: "Lexend Deca", sans-serif;
+  --font-stack-2: "Big Shoulders Display", cursive;
+
+  /* Fonts weight */
+  --f-s-1-weight: 400;
+  --f-s-2-weight: 700;
+}
+
+body {
+  background-color: var(--Very-light-gray);
+}
+
+a,
+p {
+  font-size: 1rem;
+  font-weight: var(--f-s-1-weight);
+  font-family: var(--font-stack-1);
+}
+
+p {
+  color: var(--Transparent-white);
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: var(--f-s-2-weight);
+  font-family: var(--font-stack-2);
+  color: var(--Very-light-gray);
+  margin: 30px 0;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 15vh 30px;
+}
+
+/* Button Style */
+.content__cta {
+  background-color: var(--Very-light-gray);
+  border: 2px solid var(--Very-light-gray);
+  padding: 15px 30px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 30px;
+  transition: 0.4s;
+}
+
+.content__cta:hover {
+  border: 2px solid var(--Very-light-gray);
+  background-color: transparent;
+  color: var(--Transparent-white);
+}
+
+/* content wrapper */
+.wrapper {
+  padding: 50px;
+}
+
+/* first content wrapper */
+.content__wrapper1 {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+
+.cta__1 {
+  color: var(--Bright-orange);
+}
+
+/* second content wrapper */
+.content__wrapper2 {
+  background-color: var(--Dark-cyan);
+}
+
+.cta__2 {
+  color: var(--Dark-cyan);
+}
+
+/* third content wrapper */
+.content__wrapper3 {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+.cta__3 {
+  color: var(--Very-dark-cyan);
+}
+
+/* Media Query For larger screen */
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+  }
+
+  /* first content wrapper */
+  .content__wrapper1 {
+    border-radius: 10px 0 0 10px;
+  }
+
+  /* third content wrapper */
+  .content__wrapper3 {
+    border-radius: 0 10px 10px 0;
+  }
+}
